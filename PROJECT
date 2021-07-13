@@ -1,0 +1,16 @@
+domain: cmp.td
+layout:
+- go.kubebuilder.io/v3
+projectName: config
+repo: cmp.td/config
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: cmp.td
+  group: cluster
+  kind: Config
+  path: cmp.td/config/api/v1beta1
+  version: v1beta1
+version: "3"
